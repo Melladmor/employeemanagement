@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux/';
 import {Table ,Placeholder} from 'reactstrap';
 import { Link } from 'react-router-dom';
@@ -13,9 +13,12 @@ const Employee = ({filterDataToUpdate}) => {
   const {lodaingUpdate} = useSelector(state=>state.employee);
 
   const {empFilter} = useSelector(state=>state.employee);
-
-
   const dispatch = useDispatch();
+
+
+  useEffect(()=>{
+    localStorage.setItem('employee' , JSON.stringify(emp));
+  },[emp])
 
 
 

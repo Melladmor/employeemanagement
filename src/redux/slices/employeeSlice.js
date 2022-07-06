@@ -6,13 +6,40 @@ export const  employeeSlice = createSlice({
     name:'emp',
 
     initialState:{
-        empData:
+        empData:JSON.parse(localStorage.getItem("employee"))||
         [
             {
                 id:"1",
                 name:"mellad",
                 email:'melladmor@gmail.com',
-                phone:"0951427208",
+                phone:"0966666666",
+                birthdate:"5/2/2000",
+                jobtitle:"programer",
+                salary:"200"
+            },
+            {
+                id:"2",
+                name:"salem",
+                email:'salem@gmail.com',
+                phone:"0966666666",
+                birthdate:"5/2/2000",
+                jobtitle:"programer",
+                salary:"200"
+            },
+            {
+                id:"3",
+                name:"ahmad",
+                email:'ahmad@gmail.com',
+                phone:"0966666666",
+                birthdate:"5/2/2000",
+                jobtitle:"programer",
+                salary:"200"
+            }
+            ,{
+                id:"4",
+                name:"rami",
+                email:'rami@gmail.com',
+                phone:"0966666666",
                 birthdate:"5/2/2000",
                 jobtitle:"programer",
                 salary:"200"
@@ -23,6 +50,8 @@ export const  employeeSlice = createSlice({
         lodaingDelete:false,
         lodaingUpdate:false,
     },
+
+    
     
 
     
@@ -54,7 +83,6 @@ export const  employeeSlice = createSlice({
             state.lodaingUpdate = false;
         }
         ,
-
         searchEmp:(state ,action)=>{
             state.empFilter = action.payload;
         }

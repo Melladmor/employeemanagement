@@ -6,8 +6,11 @@ const Header = () => {
     const [toggle ,setToggle] = useState(false);
 
     const handleToggle = ()=>{
-        setToggle(!toggle)
+            setToggle(!toggle)
+        
     }
+
+    console.log(toggle);
     return (
         <div >
             <Navbar className='container header'>
@@ -25,15 +28,15 @@ const Header = () => {
 
                 <OffcanvasBody>
                     <Nav navbar>
-                        <NavItem className='item_nav'>
-                            <NavLink to='/employeemanagement' className='nav-link'>
+                        <NavItem className='item_nav' onClick={handleToggle}>
+                            <NavLink to='/employeemanagement' className='nav-link' >
                             <i className="fa fa-list me-1"></i>
                             Employee List
                             </NavLink>
                         </NavItem>
 
-                        <NavItem className='item_nav'>
-                            <NavLink to='/addEmp' className='nav-link'>
+                        <NavItem className='item_nav' onClick={handleToggle}>
+                            <NavLink to='/addEmp' className='nav-link' >
                             <i className="fa fa-plus me-1"></i>
                             Add Employee
                             </NavLink>
