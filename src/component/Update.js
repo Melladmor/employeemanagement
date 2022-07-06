@@ -22,7 +22,7 @@ const Update = ({dataToUpdate}) => {
   const handleUpdate =(e)=>{
     e.preventDefault();
     dispatch(startUpdate());
-    navigate('/')
+    navigate('/employeemanagement')
     setTimeout(()=>{
       dispatch(successUpdate({id,name,email,phone,birthdate,jobtitle,salary}));
     },3000)
@@ -34,7 +34,7 @@ const Update = ({dataToUpdate}) => {
     <div className='container div_form' >
         <Breadcrumb className='bread mb-4'>
           <BreadcrumbItem >
-            <Link to='/'>Employee List</Link>
+            <Link to='/employeemanagement'>Employee List</Link>
           </BreadcrumbItem>
           <BreadcrumbItem active>
             Edit Employee

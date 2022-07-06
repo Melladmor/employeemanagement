@@ -15,16 +15,7 @@ const Employee = ({filterDataToUpdate}) => {
   const {empFilter} = useSelector(state=>state.employee);
 
 
-
-
-
-
   const dispatch = useDispatch();
-
-
-
-
-
 
 
 

@@ -43,7 +43,7 @@ function App() {
       <Header/>
       <ToastContainer/>
       <Routes>
-        <Route path='/' element={<Employee filterDataToUpdate={filterDataToUpdate}/>}/>
+        <Route path='/employeemanagement/' element={<Employee filterDataToUpdate={filterDataToUpdate}/>}/>
         <Route path='/addEmp' element={<AddEmp/>}/>
         <Route path='/update' element={<Update dataToUpdate={dataToUpdate}/>}/>
       </Routes>

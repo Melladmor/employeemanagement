@@ -26,7 +26,7 @@ const Header = () => {
                 <OffcanvasBody>
                     <Nav navbar>
                         <NavItem className='item_nav'>
-                            <NavLink to='/' className='nav-link'>
+                            <NavLink to='/employeemanagement' className='nav-link'>
                             <i className="fa fa-list me-1"></i>
                             Employee List
                             </NavLink>

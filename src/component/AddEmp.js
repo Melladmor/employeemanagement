@@ -22,7 +22,7 @@ const AddEmp = () => {
     const id = nextId();
     e.preventDefault();
     dispatch(startUser());
-    navigate('/')
+    navigate('/employeemanagement')
     setTimeout(()=>{
       dispatch(sucssesUser({id,name,email,phone,birthdate,jobtitle,salary}))
     },3000)
@@ -34,7 +34,7 @@ const AddEmp = () => {
 
         <Breadcrumb className='bread mb-4'>
           <BreadcrumbItem >
-            <Link to='/'>Employee List</Link>
+            <Link to='/employeemanagement'>Employee List</Link>
           </BreadcrumbItem>
           <BreadcrumbItem active>
             Add Employee
