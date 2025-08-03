@@ -13,14 +13,14 @@ Access the live app here:
 - Add new employee records
 - Edit or delete existing entries
 - Responsive and user-friendly interface
-- State managed using React Hooks
+- State managed using Redux Toolkit
 
 ## 🛠️ Tech Stack
 
 - React.js
 - JavaScript (ES6+)
 - CSS / Bootstrap
-- Local state or Context API
+- Local state
 
 ## 🚀 Getting Started
 
